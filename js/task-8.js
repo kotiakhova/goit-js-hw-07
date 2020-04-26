@@ -1,16 +1,9 @@
-document.querySelector('button[data-action="render"]' ).addEventListener('click', (event) => {
-    
-    
-    createBoxes(document.querySelector('div#controls' ).firstElementChild.value);
+document.querySelector('button[data-action="render"]' ).addEventListener('click', (event) => 
+    createBoxes(document.querySelector('div#controls' ).firstElementChild.value));
 
-})
+document.querySelector('button[data-action="destroy"]' ).addEventListener('click', destroyBoxes);
 
-document.querySelector('button[data-action="destroy"]' ).addEventListener('click', (event) => {
-    
-    
-    destroyBoxes();
 
-})
 
 function createBoxes(amount) {
     document.querySelector('div#boxes').innerHTML = '';

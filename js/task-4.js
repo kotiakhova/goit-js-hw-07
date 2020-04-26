@@ -7,20 +7,20 @@ const numberValue = document.querySelector('#value')
 let counterValue = 0
 
 
-incrementButton.addEventListener('click', (event) => increment(numberValue));
+incrementButton.addEventListener('click', increment);
 
-decrementButton.addEventListener('click', (event) => decrement(numberValue));
+decrementButton.addEventListener('click', decrement);
 
-function increment (value) {
+function increment () {
 
   counterValue += 1;
 
-  value.textContent = counterValue;
+  numberValue.textContent = counterValue;
 }
 
-function decrement (value) {
+function decrement () {
 
   counterValue -= 1;
 
-  value.textContent = counterValue;
+  numberValue.textContent = counterValue;
 }
