@@ -1,7 +1,7 @@
 const form = document.querySelector('input#validation-input');
 
 
-form.addEventListener('blur', (e) => verification(e))
+form.addEventListener('blur', verification);
 
 function verification (event) {
     if (event.currentTarget.value.length === Number(event.currentTarget.dataset.length)) {
